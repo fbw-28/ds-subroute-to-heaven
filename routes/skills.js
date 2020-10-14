@@ -13,14 +13,11 @@ const getSkillsController = (req, res) => {
   res.send(skills);
 };
 
-router.get("/", getSkillsController);
-
 const getSkillsIdController = (req, res) => {
   const { id } = req.params;
   let skill = skills.find((skill) => skill.id == id);
   res.send(skill);
 };
-router.get("/:id", getSkillsIdController);
 
 const postSkillsController = (req, res) => {
   if (!req.body.title) {
@@ -30,7 +27,6 @@ const postSkillsController = (req, res) => {
   skills.push(skillNew);
   res.send(skillNew);
 };
-router.post("/", postSkillsController);
 
 const patchSkillsController = (req, res) => {
   const { id } = req.params;
@@ -38,7 +34,6 @@ const patchSkillsController = (req, res) => {
   Object.assign(skillToUpdate, { ...req.body });
   res.send(skillToUpdate);
 };
-router.patch("/:id", patchSkillsController);
 
 const deleteSkillsController = (req, res) => {
   const { id } = req.params;
@@ -46,6 +41,11 @@ const deleteSkillsController = (req, res) => {
   skills = skills.filter((skill) => skill.id != id); // delete item by filtering it out
   res.send(skill); // return deleted item
 };
+
+router.get("/", getSkillsController);
+router.get("/:id", getSkillsIdController);
+router.post("/", postSkillsController);
+router.patch("/:id", patchSkillsController);
 router.delete("/:id", deleteSkillsController);
 
 module.exports = router;
