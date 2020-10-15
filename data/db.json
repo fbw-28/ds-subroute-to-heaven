@@ -1,0 +1,41 @@
+{
+  "skills": [
+    {
+      "id": "1",
+      "title": "Coding"
+    },
+    {
+      "id": "2",
+      "title": "Complaining"
+    },
+    {
+      "id": "3",
+      "title": "Procrastinating"
+    },
+    {
+      "id": "4",
+      "title": "Improving"
+    },
+    {
+      "id": "5",
+      "title": "Never giving up"
+    }
+  ],
+  "todos": [
+    {
+      "id": "1",
+      "name": "Wake the cat",
+      "done": false
+    },
+    {
+      "id": "3",
+      "name": "Trim off your neighbours beard",
+      "done": true
+    },
+    {
+      "id": "4",
+      "name": "Learn to meditate and become one with the backend",
+      "done": false
+    }
+  ]
+}
