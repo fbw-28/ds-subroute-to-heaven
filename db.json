@@ -1,0 +1,71 @@
+{
+  "skills": [
+    {
+      "id": "1",
+      "title": "Coding"
+    },
+    {
+      "id": "2",
+      "title": "Complaining"
+    },
+    {
+      "id": "3",
+      "title": "Procrastinating"
+    },
+    {
+      "id": "4",
+      "title": "Improving"
+    },
+    {
+      "id": "5",
+      "title": "Never giving up"
+    },
+    {
+      "id": "1602877078103",
+      "title": "playing Skip-Bo"
+    }
+  ],
+  "todos": [
+    {
+      "id": "2",
+      "name": "Make a Corona Test",
+      "done": false
+    },
+    {
+      "id": "4",
+      "name": "Learn to meditate and become one with the backend",
+      "done": false
+    },
+    {
+      "id": "1602697745668",
+      "name": "new task updated"
+    },
+    {
+      "id": "1602875922973",
+      "name": "go to sleep",
+      "done": false
+    }
+  ],
+  "users": [
+    {
+      "id": "2",
+      "username": "user2",
+      "password": "pw2"
+    },
+    {
+      "id": "3",
+      "username": "user3",
+      "password": "pw3"
+    },
+    {
+      "id": "1602697168847",
+      "username": "Lena updated",
+      "password": 12334
+    },
+    {
+      "id": "1602875120012",
+      "username": "Daniel",
+      "password": "randompassword"
+    }
+  ]
+}
