@@ -2,6 +2,12 @@ const express = require('express');
 const app = express();
 const morgan = require("morgan")
 
+// Database
+
+const db = require("./db/lowDbSetup");
+// db.defaults().write();
+
+
 const todosRoute = require("./routes/todos")
 const skillsRoute = require("./routes/skills")
 const usersRoute = require("./routes/users");
@@ -18,3 +24,8 @@ app.use(morgan('dev'))
 app.use("/todos", todosRoute);
 app.use("/skills", skillsRoute);
 app.use("/users", usersRoute);
+
+app.get('/', (req, res) => {
+  res.send("<h1>Welcome to our API</h1>")
+})
+
